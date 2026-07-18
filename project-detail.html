@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Project Detail — Agni Mondol Arpon</title>
+<meta content="A detailed look into the architectural design and creative execution by Agni Mondol Arpon." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=DM+Sans:wght@400;500&amp;family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#ecc15a",
+                    "surface-bright": "#f9f9f9",
+                    "on-tertiary-container": "#858383",
+                    "tertiary": "#000000",
+                    "gold-tint": "#F1E9D2",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-secondary-fixed": "#251a00",
+                    "inverse-primary": "#c8c6c5",
+                    "on-background": "#1a1c1c",
+                    "success-forest": "#2E6B44",
+                    "warm-canvas": "#F7F6F3",
+                    "primary-container": "#1c1b1b",
+                    "tertiary-fixed": "#e5e2e1",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#1c1b1b",
+                    "secondary-fixed": "#ffdf9b",
+                    "secondary": "#785a00",
+                    "surface": "#f9f9f9",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "on-error-container": "#93000a",
+                    "on-primary-container": "#858383",
+                    "surface-variant": "#e2e2e2",
+                    "on-surface-variant": "#444748",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "outline-variant": "#c4c7c7",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed-variant": "#474646",
+                    "surface-container-high": "#e8e8e8",
+                    "on-secondary-container": "#765900",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#474746",
+                    "on-secondary-fixed-variant": "#5b4300",
+                    "primary-fixed": "#e5e2e1",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-container": "#1c1b1b",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "inverse-surface": "#2f3131",
+                    "surface-tint": "#5f5e5e",
+                    "soft-divider": "#E3E1DC",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dadada",
+                    "surface-container-low": "#f3f3f4",
+                    "primary": "#000000",
+                    "outline": "#747878",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "secondary-container": "#ffd169",
+                    "background": "#f9f9f9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-lg": "48px",
+                    "container-max": "1200px",
+                    "margin-mobile": "16px",
+                    "section-gap": "96px",
+                    "stack-md": "24px",
+                    "gutter": "24px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "headline-lg": ["Playfair Display"],
+                    "body-md": ["DM Sans"],
+                    "display-hero": ["Cormorant Garamond"],
+                    "label-caps": ["Space Mono"],
+                    "body-lg": ["DM Sans"],
+                    "headline-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-hero": ["84px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .perspective-text {
+        font-variant-caps: small-caps;
+      }
+      .antique-divider {
+        height: 1px;
+        background: linear-gradient(to right, transparent, theme('colors.secondary'), transparent);
+      }
+      .journal-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: theme('colors.secondary');
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      .journal-card:hover::before {
+        transform: scaleX(1);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-md border-b-2 border-secondary-fixed shadow-sm">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed">Agni Mondol Arpon</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-label-caps text-label-caps text-secondary dark:text-secondary-fixed-dim font-bold border-b border-secondary hover:text-secondary transition-colors duration-300" href="#">Work</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">Process</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">Journal</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps rounded-sm active:scale-95 transition-all duration-200">Hire Me</button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter mb-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-end gap-stack-md mb-stack-lg">
+<div class="max-w-2xl">
+<p class="font-label-caps text-label-caps text-secondary mb-stack-sm tracking-widest uppercase">Editorial Case Study 004</p>
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-stack-sm">Kinetica: A Motion-First Digital Interface</h1>
+<p class="font-display-hero text-headline-md italic opacity-80">Rethinking the fluid intersection of tactility and digital canvas.</p>
+</div>
+<div class="hidden md:block pb-2">
+<span class="flex items-center gap-2 font-label-caps text-label-caps text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-success-forest animate-pulse"></span>
+                        OPEN TO WORK
+                    </span>
+</div>
+</div>
+<div class="w-full h-[614px] md:h-[819px] bg-surface-container-low overflow-hidden rounded-lg shadow-sm border border-soft-divider relative group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic, high-contrast photograph of a minimalist high-end office interior featuring a sleek black desk with a single modern laptop displaying a dark-mode website interface. The room is filled with soft, warm morning light and long shadows, creating an editorial, luxury atmosphere. The color palette is dominated by matte blacks, crisp whites, and subtle antique gold reflections on metal accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGE0Xq_1rNnqgyBxxETGW05kKwiJzW85KSPXkeg2lu4flISdjjfytYCS9PSX7Ytmjp-yp9KsUsndoHR3a71uBOaFp_l6rPsw59hNE_TGbcO-bY6pGR4flrY9QKdNRa4YW1TFU4JVEN9JnVfRCBgpXfQ2WkI_CcrxuLX2vSt-Mh0m1BbXA0B0RDcnCFNaWUajt6u0nFG5YhD8eBQaY3Y43JepCPuE0BUs4bfqKtuLF_9tFCb_-scrb56GpFW0ccc8GK2fKAtqOliyQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+</section>
+<!-- Project Meta Grid -->
+<section class="max-w-container-max mx-auto px-gutter mb-section-gap">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-stack-lg border-y border-soft-divider py-12">
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary mb-2">ROLE</h4>
+<p class="font-body-lg text-body-lg">Lead Interaction Designer</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary mb-2">DURATION</h4>
+<p class="font-body-lg text-body-lg">Oct 2023 — Jan 2024</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary mb-2">TOOLS</h4>
+<p class="font-body-lg text-body-lg">Next.js, Tailwind, Figma</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-secondary mb-2">CLIENT</h4>
+<p class="font-body-lg text-body-lg">Aura Luxury Goods</p>
+</div>
+</div>
+</section>
+<!-- Problem & Paradox Section -->
+<section class="max-w-container-max mx-auto px-gutter mb-section-gap">
+<div class="flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="md:w-1/2 order-2 md:order-1">
+<img class="w-full aspect-[4/5] object-cover rounded-lg" data-alt="A close-up, high-detail photograph of a person's hands elegantly holding a slim, bezel-less smartphone. The screen displays a complex web of interactive wireframes and typography in an antique gold and black color scheme. The lighting is low-key with a soft rim light focusing on the skin texture and the glass screen, set against a dark, minimalist architectural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOr0DvIwIp_7puQwQEGaLMDS7iR1Lj7D6ySbbGeFGpnXRXn49efblK5mqb9iwaJ6GvLq1BElQqnca9Zoam1exquiuunZSxZ2c24cABlRRshrzBNY0T8MXyBFpw1hy0DZGasVUjAaX5qlQHxmkXsxtUrzcfd7i4zdVOSMBGa7nMUoOXaRC2sHDLhVSr7Xn8FWnocywli4HYWgFpFSJendeYHpbcZcb5mLxrIL8dPNjQpcwNkqfhvuV-Ifg3Gi4A3O81Te9X0F7hhf0"/>
+</div>
+<div class="md:w-1/2 order-1 md:order-2 space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">The Paradox of Digital Craft</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The primary challenge was a fundamental paradox: how do we create a digital experience that feels as heavy and permanent as a physical art monograph, while maintaining the fluid, instantaneous speed expected by today's premium users?</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">The existing platform felt 'standard'—a word that doesn't exist in the vocabulary of luxury. We had to break the grid without breaking the usability, introducing intentional friction that guides the eye through a narrative rather than just a product catalog.</p>
+<div class="pt-4">
+<div class="antique-divider w-24 mb-4"></div>
+<p class="font-display-hero text-headline-md italic text-secondary">"Design is not just what it looks like; it's how much silence it creates."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Creative Approach: Journal-First -->
+<section class="bg-surface-container-low py-section-gap border-y border-soft-divider">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="mb-stack-lg text-center">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-4">A Journal-First Architecture</h2>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto text-on-surface-variant">Building a design language from the ground up requires a methodical synthesis of research and intuition.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 01 -->
+<div class="journal-card relative bg-white p-10 shadow-sm border border-soft-divider group transition-all duration-300 hover:-translate-y-2">
+<span class="font-display-hero text-display-hero text-secondary opacity-20 block mb-4 group-hover:opacity-100 transition-opacity">01</span>
+<h3 class="font-headline-md text-headline-md mb-4">Discovery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Deep immersion into the client's archive, identifying core visual anchors—high-contrast typography and metallic finishes.</p>
+</div>
+<!-- Card 02 -->
+<div class="journal-card relative bg-white p-10 shadow-sm border border-soft-divider group transition-all duration-300 hover:-translate-y-2">
+<span class="font-display-hero text-display-hero text-secondary opacity-20 block mb-4 group-hover:opacity-100 transition-opacity">02</span>
+<h3 class="font-headline-md text-headline-md mb-4">Synthesis</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Translating physical textures into CSS tokens. Developing a custom grid system based on editorial typography principles.</p>
+</div>
+<!-- Card 03 -->
+<div class="journal-card relative bg-white p-10 shadow-sm border border-soft-divider group transition-all duration-300 hover:-translate-y-2">
+<span class="font-display-hero text-display-hero text-secondary opacity-20 block mb-4 group-hover:opacity-100 transition-opacity">03</span>
+<h3 class="font-headline-md text-headline-md mb-4">Execution</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Rapid prototyping of micro-interactions and scroll-triggered animations to ensure a seamless premium feel.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Execution & Results -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg">Refined Execution</h2>
+<div class="flex justify-center gap-4 mt-6">
+<span class="px-4 py-1 border border-secondary text-secondary font-label-caps text-label-caps rounded-full">WEB INTERFACE</span>
+<span class="px-4 py-1 border border-secondary text-secondary font-label-caps text-label-caps rounded-full">MOBILE APP</span>
+</div>
+</div>
+<div class="grid md:grid-cols-12 gap-gutter">
+<div class="md:col-span-8">
+<div class="bg-primary-container p-4 rounded-xl shadow-xl overflow-hidden">
+<img class="w-full rounded-lg" data-alt="A high-resolution mockup of a luxury desktop website landing page displayed on a high-end monitor. The design features large-scale elegant serif typography, immense white space, and high-fashion editorial photography. The color scheme is monochrome black and white with subtle gold accents for buttons. The setting is a bright, modern studio with natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgHvoQlH-4zzsF5s0teYTp5Ojs3NzPx-HhMoIUaA1YXVioB87lHczjpkohTHFLai_vXzx3XjqWIYnxhFiqcWHjGBburVqMSWMxXpXAz8xi_NLObnkIJt4VskRwd6_ravobDr9y3gMXJLZfin8UmeLoT1Wl2eOu6ucw2KbhsuyNAaNDULVElAAIzAlrvWNEvOCSw71_HkGw_W5O53DPv6bt9nGkSgvCjwUMRJF9id2BDeWqGlG0nsgHbN4FrLTHU0w7C3Uk1fsdb_4"/>
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col justify-center gap-gutter">
+<div class="bg-white p-4 rounded-3xl shadow-xl border border-soft-divider w-full max-w-[280px] mx-auto">
+<img class="w-full rounded-2xl" data-alt="A sleek, modern mobile application interface mockup showing a product details page for high-end jewelry. The design uses a minimalist editorial style with clean lines, 'Antique Gold' accent highlights, and smooth scroll animations. The background is a warm off-white, emphasizing the high-quality product images." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGFnlAfOafNoB_lQBe8kcAcduaTyff2FvuRbt_RQxdsU5u3vhF2_GxwHYk92w9AzbxGga7OYRBQ_1wVvHzOCjxLr5--D1GZ1XZNxFUsCxm6ToBfleIA97T6MKXy20oWxavzoOaK5uz_5L_sZZrf3NtMp2krJrDSzRKvBh-ssIHz9ddO3fnwdoWntkGV5l9HY2jMFaXRyB6KRvbOWf6s1D-pnVFvt5GbNsIWykQZZMH3N1nydoucYy1VZ-oIuKygObOjucf705JrZw"/>
+</div>
+<div class="p-6 bg-gold-tint border border-secondary-fixed rounded-lg">
+<h4 class="font-headline-md text-headline-md text-on-secondary-container mb-2">The Result</h4>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant">A 40% increase in user session duration and a complete visual transformation that aligned the digital brand with the heritage of the physical collection.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Projects -->
+<section class="max-w-container-max mx-auto px-gutter mb-section-gap">
+<h2 class="font-headline-md text-headline-md mb-stack-md border-l-4 border-secondary pl-6">You Might Also Like</h2>
+<div class="grid md:grid-cols-3 gap-gutter">
+<a class="group block overflow-hidden" href="#">
+<div class="aspect-video bg-surface-container overflow-hidden mb-4 rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist landscape photography showing a vast desert with soft golden sand and deep shadows, used as a background for a web design project. Editorial aesthetic, black and white tones with gold light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoI-pt1RZvDvWVvHMUFlUwswSQf2v8IbAwR4Kak4z9hrBodzWSRfTHFiPE5g5i-3zQvYfXyn2DsrGDhKIUZFALNdFRcLpIXy7yF3joi-F4Rr5n5W5Ll-d5S53bUVQZEzut5c52_s3dUEqodWxah_Mhv_VQP-4N2E58SAN37MXKpB3YLEOaIEpn99kCdPUtq2DpJU8Vekexmt3Jb1ODZtLpeot-Gt2EgwrjHxYbr5_cM_RcmfUJ8f3eVsM2s9Z33tgw_GSM9bAMjdA"/>
+</div>
+<h3 class="font-headline-md text-headline-md group-hover:text-secondary transition-colors">Nomad Identity</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Branding • 2023</p>
+</a>
+<a class="group block overflow-hidden" href="#">
+<div class="aspect-video bg-surface-container overflow-hidden mb-4 rounded-lg">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, minimalist workspace with a single designer chair and an architectural book on a small table. High contrast, luxury furniture aesthetic, deep blacks and bright whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrcykDg7adL-74FocOx4xAlV15j7tVRsm0Nd7f1lpJAVYNwfRYv1QBAtVMD3tYm8LkM3jntieoyeKtJq2LwmEzHikIb4bgXAK80wDqIKe6FKNZOWxHFrF7rcuMJLJUnP1ZIHj4iBaWJCmgZ-qzXIkD4oeBHWgccD5uZMjSqThXZlb2Ja8kwl7LSU9-Yzi3TzXObyPScYx_dXykgK5LQM7wemFO1nuSdmb27M9vpESWRrw5BSUi7CO_Dt84UeMe4MZl_FPPtTjoZCc"/>
+</div>
+<h3 class="font-headline-md text-headline-md group-hover:text-secondary transition-colors">Aura Archive</h3>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Archival Design • 2024</p>
+</a>
+<a class="gro
