@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume - Agni Mondol Arpon</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;500;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@100..900&family=DM+Sans:wght@100..900&family=Playfair+Display:wght@100..900&family=Space+Mono:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-container": "#eeeeee",
+                        "surface-bright": "#f9f9f9",
+                        "secondary": "#785a00",
+                        "on-secondary-container": "#765900",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-tertiary-fixed-variant": "#474646",
+                        "tertiary-fixed": "#e5e2e1",
+                        "gold-tint": "#F1E9D2",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#ffdf9b",
+                        "on-primary-fixed": "#1c1b1b",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c4c7c7",
+                        "secondary-container": "#ffd169",
+                        "inverse-surface": "#2f3131",
+                        "on-surface-variant": "#444748",
+                        "on-secondary-fixed": "#251a00",
+                        "on-primary-container": "#858383",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-high": "#e8e8e8",
+                        "soft-divider": "#E3E1DC",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "success-forest": "#2E6B44",
+                        "primary": "#000000",
+                        "surface-dim": "#dadada",
+                        "outline": "#747878",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "inverse-primary": "#c8c6c5",
+                        "on-tertiary-container": "#858383",
+                        "secondary-fixed-dim": "#ecc15a",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "background": "#f9f9f9",
+                        "primary-fixed": "#e5e2e1",
+                        "warm-canvas": "#F7F6F3",
+                        "surface": "#f9f9f9",
+                        "primary-container": "#1c1b1b",
+                        "surface-tint": "#5f5e5e",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#1c1b1b",
+                        "surface-container-low": "#f3f3f4",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#474746",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "96px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "stack-lg": "48px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px",
+                        "stack-md": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["DM Sans"],
+                        "body-lg": ["DM Sans"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-caps": ["Space Mono"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-hero": ["Cormorant Garamond"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.8", "fontWeight": "400" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display-hero": ["84px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: theme('colors.secondary');
+            border: 2px solid theme('colors.surface-container-lowest');
+            z-index: 10;
+        }
+        
+        .timeline-line {
+            position: relative;
+        }
+        
+        .timeline-line::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 24px;
+            bottom: -24px;
+            width: 1px;
+            background-color: theme('colors.soft-divider');
+            z-index: 1;
+        }
+        
+        .timeline-item:last-child .timeline-line::after {
+            display: none;
+        }
+
+        .hover-gold-text:hover {
+            color: theme('colors.secondary');
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed font-body-md text-body-md overflow-x-hidden">
+<!-- Top Navigation -->
+<nav class="bg-surface/80 dark:bg-surface-container-lowest/80 backdrop-blur-md fixed top-0 w-full z-50 shadow-sm transition-all duration-300" id="topNav">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto border-b-2 border-secondary-fixed">
+<a class="font-headline-md text-headline-md tracking-tighter text-primary dark:text-primary-fixed" href="#">Agni Mondol Arpon</a>
+<div class="hidden md:flex items-center gap-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">Work</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">Process</a>
+<a class="font-label-caps text-label-caps text-secondary dark:text-secondary-fixed-dim font-bold border-b border-secondary pb-1 hover:text-secondary transition-colors duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">Journal</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary transition-colors duration-300" href="#">Contact</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary px-6 py-2 rounded font-label-caps text-label-caps hover:bg-inverse-surface transition-colors duration-300" href="#">Hire Me</a>
+<button aria-label="Menu" class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="h-[2px] w-0 bg-secondary absolute bottom-0 left-0 transition-all duration-300" id="scrollProgress"></div>
+</nav>
+<!-- Main Content -->
+<main class="pt-32 pb-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<!-- Hero Section -->
+<header class="text-center mb-section-gap max-w-3xl mx-auto">
+<h1 class="font-display-hero text-[56px] md:text-display-hero text-primary mb-6 relative inline-block">
+                Resume
+                <span class="absolute bottom-2 left-0 w-full h-[1px] bg-secondary opacity-60"></span>
+</h1>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant mt-4">
+<span class="w-2 h-2 rounded-full bg-success-forest"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest">Open to Work</span>
+</div>
+</header>
+<!-- Executive Summary -->
+<section class="mb-section-gap max-w-4xl mx-auto">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant mb-stack-md uppercase tracking-widest text-center">Executive Summary</h2>
+<p class="font-display-hero text-headline-lg-mobile md:text-headline-lg text-primary text-center leading-relaxed">
+                A multidisciplinary product designer and creative technologist specializing in crafting high-end, tactile digital experiences. With a focus on structural typography, editorial layouts, and subtle motion, I bridge the gap between aesthetic luxury and functional rigor.
+            </p>
+</section>
+<!-- Experience Timeline -->
+<section class="mb-section-gap max-w-3xl mx-auto">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant mb-stack-lg uppercase tracking-widest border-b border-soft-divider pb-4">Professional Experience</h2>
+<div class="pl-8 relative">
+<div class="timeline-item mb-stack-lg relative">
+<div class="timeline-line">
+<div class="timeline-dot"></div>
+<div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+<h3 class="font-headline-md text-[24px] md:text-headline-md text-primary">Senior Product Designer</h3>
+<span class="font-label-caps text-label-caps text-secondary mt-1 md:mt-0">2021 — PRESENT</span>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-surface-variant mb-4 italic">Studio Aethel</h4>
+<p class="font-body-md text-body-md text-on-surface mb-4">
+                            Lead design for premium editorial platforms and e-commerce experiences. Established the core design system adopted across 14 enterprise products, reducing frontend technical debt by 30%.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant rounded font-label-caps text-[10px] tracking-wider">DESIGN SYSTEMS</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant rounded font-label-caps text-[10px] tracking-wider">TYPOGRAPHY</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant rounded font-label-caps text-[10px] tracking-wider">WEBGL INTERACTION</span>
+</div>
+</div>
+</div>
+<div class="timeline-item mb-stack-lg relative">
+<div class="timeline-line">
+<div class="timeline-dot"></div>
+<div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+<h3 class="font-headline-md text-[24px] md:text-headline-md text-primary">Interaction Designer</h3>
+<span class="font-label-caps text-label-caps text-secondary mt-1 md:mt-0">2018 — 2021</span>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-surface-variant mb-4 italic">Monograph Agency</h4>
+<p class="font-body-md text-body-md text-on-surface mb-4">
+                            Crafted award-winning marketing sites for luxury brands. Specialized in scroll-driven animations and tactile micro-interactions that increased user dwell time by an average of 45%.
+                        </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant rounded font-label-caps text-[10px] tracking-wider">PROTOTYPING</span>
+<span class="px-3 py-1 bg-surface-container-low text-on-surface-variant rounded font-label-caps text-[10px] tracking-wider">USER RESEARCH</span>
+</div>
+</div>
+</div>
+<div class="timeline-item relative">
+<div class="timeline-line">
+<div class="timeline-dot"></div>
+<div class="flex flex-col md:flex-row md:items-baseline justify-between mb-2">
+<h3 class="font-headline-md text-[24px] md:text-headline-md text-primary">UI/UX Designer</h3>
+<span class="font-label-caps text-label-caps text-secondary mt-1 md:mt-0">2015 — 2018</span>
+</div>
+<h4 class="font-body-lg text-body-lg text-on-surface-variant mb-4 italic">FinTech Solutions Inc.</h4>
+<p class="font-body-md text-body-md text-on-surface">
+                            Translated complex financial data into intuitive dashboards. Collaborated closely with engineering teams to ensure pixel-perfect implementation of data visualization components.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Education & Certifications -->
+<section class="mb-section-gap max-w-3xl mx-auto">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant mb-stack-lg uppercase tracking-widest border-b border-soft-divider pb-4">Education & Honors</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div>
+<h3 class="font-headline-md text-[24px] text-primary mb-2">MFA in Interaction Design</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic mb-1">School of Visual Arts, NY</p>
+<p class="font-label-caps text-label-caps text-secondary">2013 — 2015</p>
+</div>
+<div>
+<h3 class="font-headline-md text-[24px] text-primary mb-2">BFA in Graphic Design</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic mb-1">Rhode Island School of Design</p>
+<p class="font-label-caps text-label-caps text-secondary">2009 — 2013</p>
+</div>
+<div class="md:col-span-2 pt-4 border-t border-soft-divider mt-4">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+<h3 class="font-headline-md text-[20px] text-primary">Awwwards Site of the Day</h3>
+<span class="font-label-caps text-label-caps text-secondary">2022, 2023</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Recognized for outstanding typography and interaction design on 'The Artisan Archive' project.</p>
+</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="text-center max-w-md mx-auto pt-stack-lg border-t border-soft-divider">
+<a class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-surface-container-lowest border border-secondary text-primary font-label-caps text-label-caps tracking-widest uppercase hover:bg-secondary hover:text-on-secondary transition-all duration-300 rounded group shadow-[0_4px_24px_rgba(0,0,0,0.02)] hover:shadow-[0_4px_24px_rgba(120,90,0,0.15)]" href="#">
+<span class="material-symbols-outlined text-[18px] group-hover:translate-y-1 transition-transform duration-300">download</span>
+                Download PDF Resume
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-tertiary-container w-full py-section-gap border-t border-soft-divider">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-start gap-stack-lg">
+<div class="flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg-mobile text-primary dark:text-primary-fixed">Agni Mondol Arpon</span>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant max-w-xs">
+                    Crafting tactile digital experiences through typography and interaction.
+                </p>
+</div>
+<div class="flex flex-col gap-6 w-full md:w-auto">
+<div class="flex gap-6 flex-wrap">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">LinkedIn</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">Twitter</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-tertiary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300" href="#">Email</a>
+</div>
+<p class="font-label-caps text-label-caps text-on-surface-variant dark:text-on-tertiary-fixed-variant opacity-70">
+                    © 2024 Agni Mondol Arpon. All rights reserved. Crafted with precision.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll Progress Indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollProgress").style.width = scrolled + "%";
+            
+            // Subtly adjust navbar styling on scroll
+            const nav = document.getElementById("topNav");
+            if (winScroll > 50) {
+                nav.classList.add("shadow-md");
+            } else {
+                nav.classList.remove("shadow-md");
+            }
+        });
+    </script>
+</body></html>
